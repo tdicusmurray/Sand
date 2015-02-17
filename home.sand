@@ -50,7 +50,7 @@ form human / form id, uses websockets for live updates, creates 5 roads, or rout
 			height = 500
 			background-color = #ccc
 		list_human
-			font-size: 10px
+			font-size = 10px
 
 		update_human
 			use update_human.design / use a file for this road's style or design

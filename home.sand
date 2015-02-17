@@ -37,9 +37,8 @@ form human / form id, uses websockets for live updates, creates 5 roads, or rout
 	/ Database calls, listens to database and live update
 	make
 		insert into human [form.see] values [form.see.stuff]
-
 	read
-	  select [form.see.twitter] from human where id = [].id / an empty box is the human's stuff
+	  	select [form.see.twitter] from human where id = [].id / an empty box is the human's stuff
 	update
 		update human set [form.see] where [form.see.email]
 	delete

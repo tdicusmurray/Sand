@@ -1,0 +1,36 @@
+Box of Sand
+
+use database and form
+
+database workfar.com Username Password / This is a note, notes are comments, notes to your friends.
+
+
+form human / form id, uses websockets for live updates, creates 5 roads, or routes, for use: edit_human,add_human,delete_human,update_human,list_human
+	see / creates websocket form
+		first_name last_name sameline /
+		email needs [regex]
+		twitter needs [regex]
+		address zip city state
+		credit_card [regex] csv [regex] MM [regex] YY [regex]
+		
+	/ Database calls, listens to database and live update
+	make
+		insert into human [form.see] values [form.see.stuff]
+
+	read
+	  select [form.see.twitter] from human where id = [].id / an empty box is the human's stuff
+	update
+		update human set [form.see] where [form.see.email]
+	delete
+		delete from human where [].id
+
+	style
+		edit_human 
+			width = 300
+			height = 500
+			background-color = #ccc
+		list_human
+			font-size: 10px
+
+		update_human
+			use update_human.design / use a file for this road's style or design
